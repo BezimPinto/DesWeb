@@ -1,0 +1,71 @@
+const container_filtro = document.createElement('div');
+const texto_pesquisa = document.createElement('input');
+const btn_pesquisa = document.createElement('button');
+
+container_filtro.style.textAlign = 'center';
+
+btn_pesquisa.innerHTML = 'Pesquisar';
+
+const atletas_container = document.createElement('div');
+document.body.appendChild(atletas_container);
+
+
+
+
+const preenche = (atleta) => {
+    const container = document.createElement('div');
+    const titulo = document.createElement('h3');
+    const imagem = document.createElement('img');
+    const descricao = document.createElement('p');
+
+    container.style.width = '15em';
+    container.style.backgroundColor = 'pink';
+    container.style.textAlign = 'center'
+    container.style.margin = 'auto'
+
+    titulo.innerText = atleta.nome;
+    imagem.src = atleta.imagem;
+    imagem.alt = `Imagem do ${atleta.nome}`;
+    descricao.innerHTML = atleta.descricao;
+
+    container.appendChild(titulo);
+    container.appendChild(imagem);
+    container.appendChild(descricao);
+
+    atletas_container.appendChild(container);
+
+}
+
+/*
+atletas.forEach( (atleta) => {
+     preenche(atleta); 
+    });
+*/
+
+/*let indice = 0;
+
+while (indice < atletas.length){
+    preenche(atletas[indice]); 
+    console.log(indice, atletas[indice].nome)
+    indice++;
+}*/
+
+const criar_atletas = (entrada) => {
+
+    for ( let indice = 0; indice < atletas.length; indice++){
+        preenche(atletas[indice]); 
+    
+    }
+}
+
+const filtrar_atletas = (texto) =>{
+    const lista_filtrada = atletas.filter{
+        (e) => {
+        conste.nome;
+
+    }
+    }
+
+}
+
+criar_atletas(atletas);
