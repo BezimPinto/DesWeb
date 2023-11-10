@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remover margens padrão do corpo */
+}
+
+#filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Altura de 10% da altura da tela */
+    background-color: #ffffff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+button {
+    margin: 10px; /* Espaçamento externo dos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    cursor: pointer;
+    background-color: #000000; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Remover borda dos botões */
+    border-radius: 5px; /* Borda arredondada dos botões */
+}
+
+/* Adicionar regras de mídia para centralizar os botões quando a tela for menor que 768 pixels */
+@media only screen and (max-width: 768px) {
+    #filters-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    button {
+        margin: 10px;
+    }
+}
