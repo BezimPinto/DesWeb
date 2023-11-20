@@ -203,9 +203,6 @@ const authorizeUser = async () => {
     }
 };
 
-// ...
-
-// Adicione listeners para os botões
 document.getElementById('show-all').addEventListener('click', async function() {
     await authorizeUser();
     showAllAthletes();

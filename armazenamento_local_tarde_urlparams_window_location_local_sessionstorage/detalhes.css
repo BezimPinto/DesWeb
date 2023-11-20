@@ -1,40 +1,49 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Remover margens padrão do corpo */
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0; /* Cor de fundo da página */
 }
 
-#filters-container {
+.details-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Altura de 10% da altura da tela */
-    background-color: #ffffff; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    height: 100vh; /* Altura total da tela */
 }
 
-button {
-    margin: 10px; /* Espaçamento externo dos botões */
-    padding: 10px 20px; /* Espaçamento interno dos botões */
-    font-size: 16px; /* Tamanho da fonte dos botões */
-    cursor: pointer;
-    background-color: #000000; /* Cor de fundo dos botões */
-    color: white; /* Cor do texto dos botões */
-    border: none; /* Remover borda dos botões */
-    border-radius: 5px; /* Borda arredondada dos botões */
+.details-card {
+    background-color: #ffffff; /* Cor de fundo do card */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra no card */
+    border-radius: 8px;
+    text-align: left;
 }
 
-/* Adicionar regras de mídia para centralizar os botões quando a tela for menor que 768 pixels */
-@media only screen and (max-width: 768px) {
-    #filters-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-    }
+img {
+    max-width: 100%;
+    border-radius: 8px; /* Borda arredondada para a imagem */
+}
 
-    button {
-        margin: 10px;
-    }
+h2 {
+    margin-top: 10px;
+    color: #333333; /* Cor do título */
+}
+
+p {
+    color: #666666; /* Cor do texto regular */
+    margin-inline-start: 200px;
+    margin-inline-end: 200px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.description {
+    margin-top: 20px;
+}
+
+h3 {
+    color: #444444; /* Cor do título da descrição */
 }

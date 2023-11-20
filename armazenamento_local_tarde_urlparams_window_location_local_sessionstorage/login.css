@@ -1,5 +1,3 @@
-/* login.css */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -69,7 +67,6 @@ button:active {
     color: #333;
 }
 
-/* Adiciona regras de mídia para tornar a página vertical até 768 pixels */
 @media only screen and (max-width: 768px) {
     h1 {
         order: -1; /* Move o título para cima do formulário */
